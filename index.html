@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ETF 投資與資產配置新手指南 - LLM Wiki 簡報</title>
+    <title>ETF 投資與資產配置新手指南 - LLM 知識庫</title>
     <style>
         :root {
             --primary-color: #2563eb;
@@ -16,7 +16,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.6;
+            line-height: 1.8;
             margin: 0;
             padding: 0;
         }
@@ -44,7 +44,7 @@
             background: var(--card-bg);
             border-radius: 12px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            padding: 2rem;
+            padding: 2.5rem;
             margin-bottom: 2rem;
             border: 1px solid var(--border-color);
         }
@@ -53,12 +53,21 @@
             border-bottom: 2px solid var(--border-color);
             padding-bottom: 0.5rem;
             margin-top: 0;
+            font-size: 1.5rem;
+        }
+        h3 {
+            color: #334155;
+            margin-top: 1.5rem;
+            font-size: 1.15rem;
+        }
+        p, li {
+            color: #475569;
         }
         ul {
             padding-left: 1.5rem;
         }
         li {
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
         }
         .tag {
             display: inline-block;
@@ -82,64 +91,84 @@
 
     <header>
         <h1>ETF 投資與資產配置新手指南</h1>
-        <p>基於 LLM Wiki 知識庫之互動式教學與量化篩選指南</p>
+        <p>基於 LLM Wiki 知識庫之完整文獻呈現與教學簡報</p>
     </header>
 
     <div class="container">
         
+        <!-- TextFile 1 -->
         <div class="card">
-            <span class="tag">Overview 專案概述</span>
-            <h2>關於本知識庫 (LLM Wiki)</h2>
-            <p>本專案旨在建立一個系統化的 ETF 投資與資產配置知識庫。透過收錄 5 篇核心專業文獻，作為大語言模型（LLM）檢索與投資人學習的堅實底座，並結合前端網頁提供直觀、清晰的教學展示。</p>
+            <span class="tag">TextFile 1</span>
+            <h2>一、ETF 定義與法規架構</h2>
+            <p><strong>1.1 什麼是 ETF</strong><br>ETF 英文原文為 Exchange Traded Fund，是一種由投信公司發行，並在證券交易所上市交易的開放式基金。ETF 兼具開放式基金及股票之特色，上市後可於初級市場進行申購或買回，亦可於次級市場盤中交易時間隨時向證券商下單買賣。</p>
+            <p><strong>1.2 ETF 種類與法規架構</strong><br>現行上市 ETF 依法規構分類，可分為三大類型，包括證券投資信託 ETF（證信託 ETF）、期信託 ETF 及跨境上市 ETF（境外 ETF）。</p>
+            <ul>
+                <li><strong>證信託 ETF</strong>：國內證券投資信託事業依證券投資信託基金管理辦法在臺募集發行及上市交易之 ETF。包含被動式追蹤指數 ETF 及主動式 ETF。</li>
+                <li><strong>期信託 ETF</strong>：國內期信託事業依期貨信託基金管理辦法在臺募集發行及上市交易之 ETF。</li>
+                <li><strong>境外 ETF</strong>：境外基金機構委託國內代理人，將國外 ETF 直接跨境來臺上市交易之 ETF。</li>
+            </ul>
+            <p><strong>1.3 多元投資風險解析</strong><br>包含市場價格波動風險、流動性風險、折溢價風險、追蹤誤差、期貨轉倉成本（Contango/Backwardation）、槓反型商品的每日複利偏離效果，以及債券型 ETF 的利率與信用風險。</p>
         </div>
 
+        <!-- TextFile 2 -->
         <div class="card">
-            <span class="tag">Module 01</span>
-            <h2>ETF 基本定義與法規架構</h2>
+            <span class="tag">TextFile 2</span>
+            <h2>二、股票 ETF 特性與風險屬性</h2>
+            <p><strong>2.1 核心優勢</strong><br>透過一籃子標的達到高度分散效果，持股透明度高，且管理費相較於傳統主動型共同基金更具優勢。</p>
+            <p><strong>2.2 電影分級風險管理法</strong></p>
             <ul>
-                <li><strong>ETF 定義</strong>：兼具開放式基金分散風險與股票盤中隨時買賣之雙重特性。</li>
-                <li><strong>三大法規架構</strong>：證信託 ETF（被動/主動式）、期信託 ETF 及境外 ETF。</li>
-                <li><strong>多元投資風險</strong>：涵蓋市場波動、流動性、折溢價、追蹤誤差、期貨轉倉成本及槓反型複利偏離風險。</li>
+                <li><strong>普遍級</strong>：國內成分股原型 ETF。風險相對單純，適合長期核心資產配置。</li>
+                <li><strong>保護級</strong>：海外股票或債券 ETF。投資人需額外留意匯率波動與跨國交易時差風險。</li>
+                <li><strong>輔導級</strong>：期貨 ETF。須注意期現貨價差與轉倉成本帶來的內耗。</li>
+                <li><strong>限制級</strong>：槓桿與反向型 ETF。僅限具備專業知識者進行短期操作，嚴禁長期持有。</li>
+            </ul>
+            <p><strong>2.3 挑選要點</strong><br>下單前必須詳閱公開說明書，並留意基金規模是否觸及下市清算門檻。</p>
+        </div>
+
+        <!-- TextFile 3 -->
+        <div class="card">
+            <span class="tag">TextFile 3</span>
+            <h2>三、淨值、折溢價與新手選股指標</h2>
+            <p><strong>3.1 淨值 (NAV) 與市價差異</strong><br>淨值代表基金的真實資產價值（總資產除以總單位數）；市價則是市場買賣雙方搓合的實際成交價格。</p>
+            <p><strong>3.2 折溢價風險</strong><br>市價高於淨值稱為「溢價」（買貴了），市價低於淨值稱為「折價」。若溢價過大時盲目追高，當市場冷卻或造市商機制發揮時，將面臨巨大的收斂損失。</p>
+            <p><strong>3.3 新手選股三原則</strong></p>
+            <ul>
+                <li><strong>規模防呆</strong>：選擇規模較大、流動性佳的標的以避免清算下市。</li>
+                <li><strong>風險適性</strong>：依據自身風險承受度挑選合適的產品類別。</li>
+                <li><strong>避開異常</strong>：避免在折溢價異常暴增的時段盲目進場交易。</li>
             </ul>
         </div>
 
+        <!-- TextFile 4 -->
         <div class="card">
-            <span class="tag">Module 02</span>
-            <h2>股票 ETF 特性與「電影分級」風險屬性</h2>
+            <span class="tag">TextFile 4</span>
+            <h2>四、總體經濟政策與股債資產配置原則</h2>
+            <p><strong>4.1 核心驅動因子</strong><br>企業獲利成長動能與美國聯準會（Fed）的利率政策走向，是主導全球股債市多空的關鍵總經變數。</p>
+            <p><strong>4.2 核心與衛星配置策略</strong></p>
             <ul>
-                <li><strong>普遍級</strong>：國內成分股原型 ETF，適合長期核心配置。</li>
-                <li><strong>保護級</strong>：海外股票或債券 ETF，須留意匯率與跨國時差。</li>
-                <li><strong>輔導級</strong>：期貨 ETF，注意期現貨價差與轉倉內耗。</li>
-                <li><strong>限制級</strong>：槓桿與反向型 ETF，僅限短線操作，嚴禁長期持有。</li>
+                <li><strong>核心配置</strong>：以大型市值型 ETF（如 S&P 500、台股大盤指數）作為資產主力，穩健賺取長期經濟成長果實。</li>
+                <li><strong>衛星配置</strong>：搭配美國公債或投資等級債 ETF，在市場波動時發揮抗震與降息保護效果。</li>
             </ul>
+            <p><strong>4.3 紀律再平衡</strong><br>透過定期檢視與動態調整（例如當資產比例偏離超過預設範圍時執行），落實「高賣低買」的客觀風險控管機制。</p>
         </div>
 
+        <!-- TextFile 5 -->
         <div class="card">
-            <span class="tag">Module 03</span>
-            <h2>淨值、折溢價與新手選股指標</h2>
+            <span class="tag">TextFile 5</span>
+            <h2>五、五大維度量化評估與實戰篩選體系</h2>
+            <p><strong>5.1 進階量化評估指標</strong></p>
             <ul>
-                <li><strong>淨值 (NAV) vs 市價</strong>：了解資產真實價值與市場搓合價格的差異。</li>
-                <li><strong>折溢價警示</strong>：溢價過大時切忌盲目追高，防範收斂時的價差損失。</li>
-                <li><strong>新手選股三原則</strong>：規模防呆（避免下市）、風險適性、避開異常折溢價時段。</li>
+                <li><strong>報酬指標</strong>：總報酬率、複合年均成長率 (CAGR)、超額報酬 (Alpha)。</li>
+                <li><strong>風險指標</strong>：年化波動度、最大回撤 (MDD)、系統性風險係數 (Beta)。</li>
+                <li><strong>風險調整後報酬</strong>：夏普值 (Sharpe Ratio，衡量總風險下的超額報酬) 與索提諾值 (Sortino Ratio)。</li>
+                <li><strong>結構與配息指標</strong>：總費用率 (TER)、追蹤誤差、收益平準金與填息能力。</li>
             </ul>
-        </div>
-
-        <div class="card">
-            <span class="tag">Module 04</span>
-            <h2>總體經濟政策與股債資產配置原則</h2>
+            <p><strong>5.2 四步驟實戰篩選流程</strong></p>
             <ul>
-                <li><strong>核心驅動因子</strong>：企業獲利成長動能與美國聯準會（Fed）利率政策。</li>
-                <li><strong>核心-衛星策略</strong>：以大型市值指數 ETF 為核心，搭配公債/投資等級債降低波動。</li>
-                <li><strong>紀律再平衡</strong>：定期檢視並調整部位，落實高賣低買機制。</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <span class="tag">Module 05</span>
-            <h2>五大維度量化評估與實戰篩選體系</h2>
-            <ul>
-                <li><strong>進階量化指標</strong>：總報酬率、CAGR、年化波動度、最大回撤 (MDD)、夏普值 (Sharpe Ratio) 與總費用率 (TER)。</li>
-                <li><strong>四步驟實戰篩選</strong>：安全性過濾 ➔ 成本與追蹤體檢 ➔ 風險壓力測試 ➔ 綜合 CP 值決選。</li>
+                <li><strong>Step 1</strong>：安全性過濾（檢視規模與流動性，排除下市風險）。</li>
+                <li><strong>Step 2</strong>：成本與追蹤體檢（比較內扣總費用率與追蹤誤差）。</li>
+                <li><strong>Step 3</strong>：風險壓力測試（評估 MDD 與歷史極端行情表現）。</li>
+                <li><strong>Step 4</strong>：綜合 CP 值決選（結合夏普值與個人投資目標做最後決策）。</li>
             </ul>
         </div>
 
