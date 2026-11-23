@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETF 投資與資產配置新手指南 - LLM Wiki 簡報</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --border-color: #e2e8f0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #1e40af, #2563eb);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 900px;
+            margin: -2rem auto 3rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.75rem;
+        }
+        .tag {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ETF 投資與資產配置新手指南</h1>
+        <p>基於 LLM Wiki 知識庫之互動式教學與量化篩選指南</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="card">
+            <span class="tag">Overview 專案概述</span>
+            <h2>關於本知識庫 (LLM Wiki)</h2>
+            <p>本專案旨在建立一個系統化的 ETF 投資與資產配置知識庫。透過收錄 5 篇核心專業文獻，作為大語言模型（LLM）檢索與投資人學習的堅實底座，並結合前端網頁提供直觀、清晰的教學展示。</p>
+        </div>
+
+        <div class="card">
+            <span class="tag">Module 01</span>
+            <h2>ETF 基本定義與法規架構</h2>
+            <ul>
+                <li><strong>ETF 定義</strong>：兼具開放式基金分散風險與股票盤中隨時買賣之雙重特性。</li>
+                <li><strong>三大法規架構</strong>：證信託 ETF（被動/主動式）、期信託 ETF 及境外 ETF。</li>
+                <li><strong>多元投資風險</strong>：涵蓋市場波動、流動性、折溢價、追蹤誤差、期貨轉倉成本及槓反型複利偏離風險。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <span class="tag">Module 02</span>
+            <h2>股票 ETF 特性與「電影分級」風險屬性</h2>
+            <ul>
+                <li><strong>普遍級</strong>：國內成分股原型 ETF，適合長期核心配置。</li>
+                <li><strong>保護級</strong>：海外股票或債券 ETF，須留意匯率與跨國時差。</li>
+                <li><strong>輔導級</strong>：期貨 ETF，注意期現貨價差與轉倉內耗。</li>
+                <li><strong>限制級</strong>：槓桿與反向型 ETF，僅限短線操作，嚴禁長期持有。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <span class="tag">Module 03</span>
+            <h2>淨值、折溢價與新手選股指標</h2>
+            <ul>
+                <li><strong>淨值 (NAV) vs 市價</strong>：了解資產真實價值與市場搓合價格的差異。</li>
+                <li><strong>折溢價警示</strong>：溢價過大時切忌盲目追高，防範收斂時的價差損失。</li>
+                <li><strong>新手選股三原則</strong>：規模防呆（避免下市）、風險適性、避開異常折溢價時段。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <span class="tag">Module 04</span>
+            <h2>總體經濟政策與股債資產配置原則</h2>
+            <ul>
+                <li><strong>核心驅動因子</strong>：企業獲利成長動能與美國聯準會（Fed）利率政策。</li>
+                <li><strong>核心-衛星策略</strong>：以大型市值指數 ETF 為核心，搭配公債/投資等級債降低波動。</li>
+                <li><strong>紀律再平衡</strong>：定期檢視並調整部位，落實高賣低買機制。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <span class="tag">Module 05</span>
+            <h2>五大維度量化評估與實戰篩選體系</h2>
+            <ul>
+                <li><strong>進階量化指標</strong>：總報酬率、CAGR、年化波動度、最大回撤 (MDD)、夏普值 (Sharpe Ratio) 與總費用率 (TER)。</li>
+                <li><strong>四步驟實戰篩選</strong>：安全性過濾 ➔ 成本與追蹤體檢 ➔ 風險壓力測試 ➔ 綜合 CP 值決選。</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ETF Investment LLM Wiki Project. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
